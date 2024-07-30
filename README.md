@@ -4,15 +4,15 @@
 </p>
 
   ## Detalles
-  
-| Requerimientos | Y/N |
-| :--------: | :-------: |
-| requerimeinto1 | ✅❌ |
-| requerimeinto2 | ✅❌ |
-| requerimeinto3 | ✅❌ |
-| requerimeinto4 | ✅❌ |
+| TEMA | DESCRIPCIÓN | ATAJO |
+|------|-------------|-------|
+| **Empate** | *El sistema permite registrar empates* | ✅|
+| **Multiples campeonatos** | *Elsistema permite un equipo perteneezca a dos campeonatos* |✅ |
+| **Tabla de posiciones** | *El sistema puede contener una tabla de posiciones* | ✅|
+| **Implentacion en JAVA** | *El sistema se inpmento correctamente y funciona* |✅ |
+
 
   ## Diagrama UML
   
-<img src="enlace_de_tu_UML" />
+<img src="https://raw.githubusercontent.com/Jxel117/imagen/main/Captura%20de%20pantalla%202024-07-30%20094631.png" />
   
