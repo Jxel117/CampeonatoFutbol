@@ -4,12 +4,12 @@
 </p>
 
   ## Detalles
-| TEMA | DESCRIPCIÓN | ATAJO |
+| TEMA | DESCRIPCIÓN | SI/NO |
 |------|-------------|-------|
 | **Empate** | *El sistema permite registrar empates* | ✅|
-| **Multiples campeonatos** | *Elsistema permite un equipo perteneezca a dos campeonatos* |✅ |
-| **Tabla de posiciones** | *El sistema puede contener una tabla de posiciones* | ✅|
-| **Implentacion en JAVA** | *El sistema se inpmento correctamente y funciona* |✅ |
+| **Multiples campeonatos** | *El sistema permite a un equipo estar en mas de un campeonato* |✅ |
+| **Tabla de posiciones** | *El sistema posee una tabla de posiciones* | ✅|
+| **Implentacion en JAVA** | *El sistema fue implemntado en un lenguaje de programación en base al UML* |✅ |
 
 
   ## Diagrama UML
