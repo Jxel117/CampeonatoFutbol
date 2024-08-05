@@ -14,5 +14,5 @@
 
   ## Diagrama UML
   
-<img src="https://raw.githubusercontent.com/Jxel117/imagen/main/Captura%20de%20pantalla%202024-07-30%20094631.png" />
+<img src="https://raw.githubusercontent.com/Jxel117/CampeonatoFutbol/main/FutbolCampeonato.jpg" />
   
