@@ -1,20 +1,28 @@
 package campeonatoFut;
 
+import java.util.Comparator;
+import java.util.List;
+
 public class Clasificacion {
-    private int equipoMasPuntos;
-    private int equipoMenosPuntos;
+    private CampeonatoFutbol campeonato;
 
-    public String equipoMasPuntos() {
-        // Lógica para obtener el equipo con más puntos
-        return "Equipo con más puntos";
+    public Clasificacion(CampeonatoFutbol campeonato) {
+        this.campeonato = campeonato;
     }
 
-    public String equipoMenosPuntos() {
-        // Lógica para obtener el equipo con menos puntos
-        return "Equipo con menos puntos";
+    public List<Equipo> getEquipos() {
+        List<Equipo> equipos = campeonato.getEquipos();
+        // Usar el nuevo método getPuntosTotales() para ordenar los equipos
+        equipos.sort(Comparator.comparingInt(Equipo::getPuntosTotales).reversed());
+        return equipos;
     }
 
-    public void actualizarClasificacion(Partido partido) {
-        // Actualizar la clasificación según el resultado del partido
+    public void actualizar(Partido partido) {
+        if (partido.ganador() != null) {
+            partido.ganador().getEstadisticas().sumarPuntos(3);
+        } else {
+            partido.getEquipo1().getEstadisticas().sumarPuntos(1);
+            partido.getEquipo2().getEstadisticas().sumarPuntos(1);
+        }
     }
 }

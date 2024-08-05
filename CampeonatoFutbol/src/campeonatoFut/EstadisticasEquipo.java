@@ -2,9 +2,20 @@ package campeonatoFut;
 
 public class EstadisticasEquipo {
     private int puntosTotales;
-    private int partidosPerdidos;
-    private int partidosGanados;
-    private int partidosEmpatados;
 
-    // Getters y setters
+    public EstadisticasEquipo() {
+        this.puntosTotales = 0;
+    }
+
+    public int getPuntosTotales() {
+        return puntosTotales;
+    }
+
+    public void setPuntosTotales(int puntosTotales) {
+        this.puntosTotales = puntosTotales;
+    }
+
+    public void sumarPuntos(int puntos) {
+        this.puntosTotales += puntos;
+    }
 }

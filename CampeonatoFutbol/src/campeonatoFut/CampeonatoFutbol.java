@@ -8,22 +8,18 @@ public class CampeonatoFutbol {
     private int equiposMax;
     private String fechaInicio;
     private String fechaFin;
-    private Object sistema;
     private List<Equipo> equipos;
+    private List<Partido> partidos;
     private Clasificacion clasificacion;
 
-    public CampeonatoFutbol(String nombre, int equiposMax, String fechaInicio, String fechaFin, Object sistema) {
+    public CampeonatoFutbol(String nombre, int equiposMax, String fechaInicio, String fechaFin) {
         this.nombre = nombre;
         this.equiposMax = equiposMax;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
-        this.sistema = sistema;
         this.equipos = new ArrayList<>();
-        this.clasificacion = new Clasificacion();
-    }
-
-    public String ganador() {
-        return clasificacion.equipoMasPuntos();
+        this.partidos = new ArrayList<>();
+        this.clasificacion = new Clasificacion(this);
     }
 
     public void inscribirEquipo(Equipo equipo) {
@@ -32,7 +28,16 @@ public class CampeonatoFutbol {
         }
     }
 
-    public void registrarResultado(Partido partido) {
-        clasificacion.actualizarClasificacion(partido);
+    public void registrarPartido(Partido partido) {
+        partidos.add(partido);
+        clasificacion.actualizar(partido);
+    }
+
+    public List<Equipo> getEquipos() {
+        return equipos;
+    }
+
+    public Clasificacion getClasificacion() {
+        return clasificacion;
     }
 }
